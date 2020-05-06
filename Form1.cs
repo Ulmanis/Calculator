@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
+            InitializeCalculator();
+        }
+
+        private void InitializeCalculator()
+        {
+            this.BackColor = Color.DarkGray;
+
+            string buttonName = null;
+            Button button = null;
+            for(int i = 0; i<10; i++)
+            {
+                buttonName = "button" + i;
+                button = (Button)this.Controls[buttonName];
+                button.Text = i.ToString();
+            }
         }
     }
 }
