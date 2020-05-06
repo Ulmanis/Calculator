@@ -31,5 +31,24 @@ namespace Calculator
                 button.Text = i.ToString();
             }
         }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Display.Text += button.Text;
+
+        }
+
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            button.BackColor = Color.DarkGray;
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            button.BackColor = SystemColors.Control;
+        }
     }
 }
