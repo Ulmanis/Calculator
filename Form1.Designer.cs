@@ -39,6 +39,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
+            this.buttonDecimal = new System.Windows.Forms.Button();
+            this.buttonBackSpace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Display
@@ -52,6 +54,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 65);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 80);
@@ -64,6 +67,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(98, 65);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 80);
@@ -76,6 +80,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(184, 65);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 80);
@@ -88,6 +93,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(12, 151);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(80, 80);
@@ -100,6 +106,7 @@
             // 
             // button5
             // 
+            this.button5.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(98, 151);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 80);
@@ -112,6 +119,7 @@
             // 
             // button6
             // 
+            this.button6.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(184, 151);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(80, 80);
@@ -124,6 +132,7 @@
             // 
             // button7
             // 
+            this.button7.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(12, 237);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(80, 80);
@@ -136,6 +145,7 @@
             // 
             // button8
             // 
+            this.button8.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(98, 237);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 80);
@@ -148,6 +158,7 @@
             // 
             // button9
             // 
+            this.button9.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(184, 237);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 80);
@@ -160,6 +171,7 @@
             // 
             // button0
             // 
+            this.button0.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.Location = new System.Drawing.Point(98, 323);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(80, 80);
@@ -170,11 +182,35 @@
             this.button0.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
             this.button0.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
+            // buttonDecimal
+            // 
+            this.buttonDecimal.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDecimal.Location = new System.Drawing.Point(184, 323);
+            this.buttonDecimal.Name = "buttonDecimal";
+            this.buttonDecimal.Size = new System.Drawing.Size(80, 80);
+            this.buttonDecimal.TabIndex = 11;
+            this.buttonDecimal.Text = ".";
+            this.buttonDecimal.UseVisualStyleBackColor = true;
+            this.buttonDecimal.Click += new System.EventHandler(this.buttonDecimal_Click);
+            // 
+            // buttonBackSpace
+            // 
+            this.buttonBackSpace.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBackSpace.Location = new System.Drawing.Point(406, 12);
+            this.buttonBackSpace.Name = "buttonBackSpace";
+            this.buttonBackSpace.Size = new System.Drawing.Size(80, 47);
+            this.buttonBackSpace.TabIndex = 12;
+            this.buttonBackSpace.Text = "⇐";
+            this.buttonBackSpace.UseVisualStyleBackColor = true;
+            this.buttonBackSpace.Click += new System.EventHandler(this.buttonBackSpace_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 539);
+            this.ClientSize = new System.Drawing.Size(508, 539);
+            this.Controls.Add(this.buttonBackSpace);
+            this.Controls.Add(this.buttonDecimal);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -206,6 +242,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button0;
+        private System.Windows.Forms.Button buttonDecimal;
+        private System.Windows.Forms.Button buttonBackSpace;
     }
 }
 

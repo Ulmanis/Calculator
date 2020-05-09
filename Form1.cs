@@ -50,5 +50,37 @@ namespace Calculator
             Button button = (Button)sender;
             button.BackColor = SystemColors.Control;
         }
+
+        private void buttonDecimal_Click(object sender, EventArgs e)
+        {
+            bool weHaveDot = Display.Text.Contains(".");
+            if (!weHaveDot)
+            {
+                if(Display.Text == string.Empty)
+                {
+                    Display.Text += "0.";
+                }
+                else
+                {
+                    Display.Text += ".";
+                }
+
+            }
+        }
+
+        private void buttonBackSpace_Click(object sender, EventArgs e)
+        {
+            string s = Display.Text;
+            if (s.Length > 1)
+            {
+                s = s.Substring(0, s.Length - 1);
+            }
+            else
+            {
+                s = "";
+            }
+
+            Display.Text = s;
+        }
     }
 }
