@@ -126,39 +126,48 @@ namespace Calculator
 
         private void Operation_Click(object sender, EventArgs e)
         {
-            //Button button = (Button)sender;
+            Button button = (Button)sender;
+
+            if(button.Text == "Sqrt")
+            {
+                Display.Text = Math.Sqrt(numOne).ToString();
+                return;
+            }
             numOne = Convert.ToDouble(Display.Text);
             Display.Text = string.Empty;
-            operation = ((Button)sender).Text;
+            operation = button.Text;
         }
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
+            double result = 0;
             numTwo = Convert.ToDouble(Display.Text);
-
 
             if(operation == "+")
             {
-                Display.Text = (numOne + numTwo).ToString();
+                result = numOne + numTwo;
             }
             else if(operation == "-")
             {
-                Display.Text = (numOne - numTwo).ToString();
+                result = numOne - numTwo;
             }
             else if (operation == "*")
             {
-                Display.Text = (numOne * numTwo).ToString();
+                result = numOne * numTwo;
             }
             else if (operation == "/")
             {
-                Display.Text = (numOne / numTwo).ToString();
+                result = numOne / numTwo;
             }
+
+            Display.Text = result.ToString();
         }
 
-        private void buttonSubstract_Click(object sender, EventArgs e)
+        private void buttonClear_Click(object sender, EventArgs e)
         {
-            numOne = Convert.ToDouble(Display.Text);
-            Display.Text = string.Empty;
+            Display.Text = "0";
+            numOne = 0;
+            numTwo = 0;
         }
     }
 }
