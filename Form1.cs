@@ -17,6 +17,9 @@ namespace Calculator
         double numOne = 0;
         double numTwo = 0;
         string operation;
+        bool scifiMode = false;
+        const int widthSmall = 300;
+        const int widthLarge = 900;
 
 
         public Calculator()
@@ -30,6 +33,10 @@ namespace Calculator
             decimalSeparator = Convert.ToChar(Thread.CurrentThread.CurrentCulture.NumberFormat.NumberDecimalSeparator);
 
             this.BackColor = Color.DarkGray;
+            this.Width = widthSmall;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
             string buttonName = null;
             Button button = null;
@@ -159,8 +166,12 @@ namespace Calculator
             {
                 result = numOne / numTwo;
             }
+            else if (operation == "^")
+            {
+                result = Math.Pow(numOne, numTwo);
+            }
 
-            Display.Text = result.ToString();
+                Display.Text = result.ToString();
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
@@ -168,6 +179,20 @@ namespace Calculator
             Display.Text = "0";
             numOne = 0;
             numTwo = 0;
+        }
+
+        private void buttonSciFi_Click(object sender, EventArgs e)
+        {
+            if (scifiMode)
+            {
+                this.Width = widthSmall;
+                scifiMode = !scifiMode;
+            }
+            else
+            {
+                this.Width = widthLarge;
+            }
+            scifiMode = !scifiMode;
         }
     }
 }
