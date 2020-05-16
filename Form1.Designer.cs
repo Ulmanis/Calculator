@@ -308,11 +308,11 @@
             // buttonSqrt
             // 
             this.buttonSqrt.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSqrt.Location = new System.Drawing.Point(556, 151);
+            this.buttonSqrt.Location = new System.Drawing.Point(642, 65);
             this.buttonSqrt.Name = "buttonSqrt";
             this.buttonSqrt.Size = new System.Drawing.Size(80, 80);
             this.buttonSqrt.TabIndex = 20;
-            this.buttonSqrt.Text = "Sqrt";
+            this.buttonSqrt.Text = "√";
             this.buttonSqrt.UseVisualStyleBackColor = true;
             this.buttonSqrt.Click += new System.EventHandler(this.Operation_Click);
             // 
@@ -336,6 +336,7 @@
             this.button10.TabIndex = 22;
             this.button10.Text = "Sqrt";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button11
             // 
@@ -346,6 +347,7 @@
             this.button11.TabIndex = 23;
             this.button11.Text = "Sqrt";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button12
             // 
@@ -356,16 +358,18 @@
             this.button12.TabIndex = 24;
             this.button12.Text = "Sqrt";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Neo Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(642, 65);
+            this.button13.Location = new System.Drawing.Point(556, 151);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(80, 80);
             this.button13.TabIndex = 25;
             this.button13.Text = "Sqrt";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button14
             // 
@@ -376,6 +380,7 @@
             this.button14.TabIndex = 26;
             this.button14.Text = "Sqrt";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button15
             // 
@@ -386,6 +391,7 @@
             this.button15.TabIndex = 27;
             this.button15.Text = "Sqrt";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button16
             // 
@@ -396,6 +402,7 @@
             this.button16.TabIndex = 28;
             this.button16.Text = "Sqrt";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button17
             // 
@@ -406,6 +413,7 @@
             this.button17.TabIndex = 29;
             this.button17.Text = "Sqrt";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button18
             // 
@@ -416,6 +424,7 @@
             this.button18.TabIndex = 30;
             this.button18.Text = "Sqrt";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button19
             // 
@@ -426,6 +435,7 @@
             this.button19.TabIndex = 31;
             this.button19.Text = "Sqrt";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button20
             // 
@@ -436,6 +446,7 @@
             this.button20.TabIndex = 32;
             this.button20.Text = "Sqrt";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button21
             // 
@@ -446,6 +457,7 @@
             this.button21.TabIndex = 33;
             this.button21.Text = "Sqrt";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.Operation_Click);
             // 
             // button22
             // 
@@ -456,6 +468,7 @@
             this.button22.TabIndex = 34;
             this.button22.Text = "Sqrt";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.Operation_Click);
             // 
             // Sci
             // 

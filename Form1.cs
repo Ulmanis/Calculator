@@ -143,6 +143,13 @@ namespace Calculator
             numOne = Convert.ToDouble(Display.Text);
             Display.Text = string.Empty;
             operation = button.Text;
+
+            if (button.Text == "√")
+            {
+                Display.Text = Math.Sqrt(numOne).ToString();
+                return;
+            }
+
         }
 
         private void buttonResult_Click(object sender, EventArgs e)
@@ -150,11 +157,11 @@ namespace Calculator
             double result = 0;
             numTwo = Convert.ToDouble(Display.Text);
 
-            if(operation == "+")
+            if (operation == "+")
             {
                 result = numOne + numTwo;
             }
-            else if(operation == "-")
+            else if (operation == "-")
             {
                 result = numOne - numTwo;
             }
@@ -170,7 +177,6 @@ namespace Calculator
             {
                 result = Math.Pow(numOne, numTwo);
             }
-
                 Display.Text = result.ToString();
         }
 
